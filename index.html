@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{ 
+            float: right;
+            background-color: teal;
+            padding: 100px;
+            margin: 0px;
+            width: 75%;
+            }
+
+    
+        
+        header h2 {
+            color: white;
+            font-size: 40px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        header::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 사이드 바 */
+
+        main aside {
+            float: left;
+            width: 25%;
+            height: 100%;
+            position: fixed;
+        }
+
+        .icon {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .icon li {
+            float: left;
+            width: 33.3%;
+            list-style-type: none;
+        }
+
+        .icon li a {
+            display: block;
+            padding: 8px 16px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        .icon li a:hover{
+            color: black;
+            background-color: lightgray;
+        }
+
+        aside .img {
+            display: block;
+            border-bottom: 1px solid lightgray;
+        }
+
+        aside div img {
+            padding: 8px 16px;
+        }
+
+        aside div img:hover {
+            background-color: lightgray;
+        }
+        
+         .nav li {
+             overflow: hidden;
+             display: block;
+             padding: 8px 10px;
+             font-weight: bold;
+         }
+
+         .nav ul li:hover {
+            background-color: lightgray;
+         }
+
+         /* main 페이지 */
+
+         section, footer {
+            float: right;
+            width: 75%
+        }
+
+        section {
+            background-color: rgba(211, 211, 211, 0.39);
+            border: 1px solid rgba(211, 211, 211, 0.39);
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        section button {
+            font-size: 16px;
+            padding: 8px 16px;
+            color: white;
+            background-color: teal;
+            border: none;
+        }
+
+        section button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        article {
+            border: 1px solid rgba(255, 255, 255, 0.925);
+            background-color: rgba(255, 255, 255, 0.925);
+            border-left: 4px solid rgba(2, 148, 2, 0.726);
+            padding: 10px 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .code {
+            font-weight: 500;
+        }
+
+        .tag { 
+            color:rgba(206, 23, 23);
+        }
+
+        .attr {
+            padding-left: 35px;
+            color: red;
+        }
+
+        .vlaue {
+            color: royalblue;
+            padding-left: 10px;
+        }
+
+        .click {
+            color: rgba(0, 128, 0, 0.767);
+        }
+
+        footer {
+            background-color: rgba(211, 211, 211, 0.39);
+            border: 1px solid rgba(211, 211, 211, 0.39);
+            padding: 15px;
+            margin-top: 15px;
+        }
+        
+        footer a {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>W3Schools.com</h2>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <div class="icon">
+                <ul>
+                <li><a href="#"><i class="fas fa-align-justify fa-2x"></i></a></li>
+                <li><a href="#"><i class="fas fa-copy fa-2x"></i></a></li>
+                <li><a href="#"><i class="fas fa-camera fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="./w3schools.png" alt="" width="80%">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Learn HTML</li>
+                    <li>Learn W3.CSS</li>
+                    <li>Learn JavaScript</li>
+                    <li>Learn SQL</li>
+                    <li>Learn PHP</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section>
+            <h2 style="font-size: 60px; font-weight: 400; margin-bottom: 20px; ">CSS</h2>
+            <P style="font-size: 25px;margin-bottom: 15px;">The Language for Styling Web Pages</P>
+            <div>
+                <button>LEARN CSS</button>
+                <button>CSS REGERENCE</button>
+            </div>
+            <article>
+                <div class="code">
+                    <p><span class="tag">body</span>  {</p>
+                       <p><span class="attr">background-color</span>:<span class="vlaue">#d0e4fe</span>;</p>
+                       <p>}</p>
+                    <p><span class="tag">h1</span> {</p>
+                        <p><span class="attr">color</span>: <span class="vlaue">orange</span>;</p>   
+                        <p><span class="attr">text-align</span>:<span class="vlaue">center</span>;</p>
+                        <p>}</p>                 
+                    <p><span class="tag">p</span>  {</p>
+                        <p><span class="attr">font-family</span>:<span class="vlaue">"Times New Roman"</span>;</p>
+                        <p><span class="attr">font-size</span>:<span class="vlaue">20px</span>;</p>
+                        <p>}</p>
+                 </div>
+            </article>
+            <div>
+                <button>Try it Yourself</button>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="font-size: 60px; font-weight: 400; margin-bottom: 20px; ">JavaScript</h2>
+            <P style="font-size: 25px;margin-bottom: 15px;">The Language for Styling Web Pages</P>
+            <div>
+                <button>LEARN JS</button>
+                <button>JS REGERENCE</button>
+            </div>
+            <article>
+                <div class="code">
+                    <p style="padding-bottom: 20px;"><span class="click">// Click the button to change the color of this paragraph</span></p>
+                       <p><span class="vlaue"> function </span>myFunction() {</p>
+                       <p style="padding-left: 20px;"><span class="vlaue">var</span> x;</p>
+                    <p style="padding-left: 20px; padding-bottom: 3px;">x = document.getElementById(<span class="tag">"domo"</span>);</p>
+                        <p style="padding-left: 20px; padding-bottom: 3px;"> x.style.fontSize = <span class="tag">"25px"</span>;</p>   
+                        <p style="padding-left: 20px; padding-bottom: 3px;"> x.style.color = <span class="tag">"red"</span>;</p>
+                        <p>}</p>                 
+                 </div>
+            </article>
+            <div>
+                <button>Try it Yourself</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+        <a href="#">FORUM</a><p>|</p>
+        <a href="#">ABOUT</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
